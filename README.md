@@ -37,7 +37,6 @@ Impostando `NEXT_PUBLIC_SITE_LIVE=true` le etichette spariscono e i dati non con
 
 - [ ] Titolo “Dott.”: verificare il titolo accademico che ne consente l'uso (in `site.ts`, `professionalWithTitle`).
 - [ ] Qualifica: non usare “Dottore Commercialista” senza la relativa iscrizione all'albo.
-- [ ] Sede Osmannoro: indirizzo completo, civico, CAP e telefono (`site.ts` → `locations`).
 - [ ] Coordinate geografiche delle tre sedi (per i dati strutturati) e orari di ricevimento.
 - [ ] Partita IVA e dati professionali del footer (numero di iscrizione all'Ordine dei Consulenti del Lavoro di Pistoia).
 - [ ] 2018 – studi presso l'Università Popolare di Milano: verifica documentale (`timeline`).

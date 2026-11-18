@@ -108,27 +108,23 @@ export const locations: Location[] = [
     city: "Osmannoro",
     label: "Osmannoro",
     province: "FI",
-    street: {
-      value: "Via Amedeo Avogadro",
-      confirmed: false,
-      note: "Indirizzo completo e numero civico da confermare.",
-    },
-    postalCode: { value: "50019", confirmed: false, note: "CAP da confermare." },
+    street: { value: "Via Enrico Fermi, 46", confirmed: true },
+    postalCode: { value: "50019", confirmed: true },
     locality: "Sesto Fiorentino",
     region: "Toscana",
-    phone: { value: null, confirmed: false, note: "Numero di telefono della sede da comunicare." },
-    geo: { value: null, confirmed: false, note: "Coordinate da rilevare dopo conferma dell'indirizzo." },
+    phone: { value: "335 775 4282", confirmed: true },
+    geo: { value: null, confirmed: false, note: "Coordinate da rilevare dalla scheda Google Business Profile." },
     hours: { value: null, confirmed: false, note: "Orari di apertura da comunicare." },
-    addressConfirmed: false,
+    addressConfirmed: true,
     intro:
       "La sede dell'Osmannoro, nell'area produttiva tra Firenze e Sesto Fiorentino, consente allo studio di essere vicino alle imprese dell'area fiorentina e della piana.",
     local: [
       "L'Osmannoro è una delle principali zone industriali e commerciali dell'area metropolitana fiorentina, con aziende manifatturiere, logistiche, commerciali e di servizi. Una presenza in quest'area permette allo studio di offrire un riferimento facilmente raggiungibile a chi opera tra Firenze, Sesto Fiorentino, Campi Bisenzio e la piana.",
       "Presso la sede dell'Osmannoro è possibile richiedere un appuntamento per le diverse aree di consulenza dello studio, con il medesimo approccio diretto e coordinato che caratterizza le sedi di Pistoia e Prato.",
     ],
-    seoTitle: "Consulente del lavoro all'Osmannoro",
+    seoTitle: "Consulente del lavoro a Firenze Osmannoro",
     seoDescription:
-      "Studio Rosini all'Osmannoro, Sesto Fiorentino (FI): consulenza del lavoro, fiscale e societaria per imprese e professionisti dell'area fiorentina.",
+      "Studio Rosini a Firenze Osmannoro, Via Enrico Fermi 46, Sesto Fiorentino (FI): consulenza del lavoro, fiscale e societaria per imprese e professionisti dell'area fiorentina.",
   },
 ];
 
