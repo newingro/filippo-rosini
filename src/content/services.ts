@@ -5,6 +5,8 @@ export type Service = {
   number: string;
   title: string;
   icon: ServiceIconName;
+  /** Descrizione brevissima per menu e indici. */
+  tagline: string;
   short: string;
   intro: string;
   body: string[];
@@ -23,6 +25,7 @@ export const services: Service[] = [
     number: "01",
     title: "Consulenza del lavoro",
     icon: "people",
+    tagline: "Paghe, contributi, contratti e gestione del personale",
     short:
       "Gestione dei rapporti di lavoro subordinato, contratti, elaborazione paghe e contributi, adempimenti e assistenza per verifiche, ispezioni, vertenze e contenzioso previdenziale.",
     intro:
@@ -71,6 +74,7 @@ export const services: Service[] = [
     number: "02",
     title: "Consulenza fiscale",
     icon: "ledger",
+    tagline: "Contabilità, dichiarazioni, regime forfettario e bilanci",
     short:
       "Tenuta della contabilità ordinaria e semplificata, assistenza ai contribuenti in regime forfettario, dichiarazioni fiscali, gestione degli adempimenti e predisposizione dei bilanci.",
     intro:
@@ -117,6 +121,7 @@ export const services: Service[] = [
     number: "03",
     title: "Consulenza societaria",
     icon: "network",
+    tagline: "Costituzione e vita della società, quote e operazioni straordinarie",
     short:
       "Assistenza nella costituzione e nella gestione di società di persone e di capitali, supporto alle deliberazioni societarie, cessioni di quote e operazioni straordinarie.",
     intro:
@@ -162,6 +167,7 @@ export const services: Service[] = [
     number: "04",
     title: "Consulenza tributaria",
     icon: "document",
+    tagline: "Verifiche, accertamenti e controversie tributarie",
     short:
       "Assistenza in materia di verifiche fiscali, accertamenti e controversie tributarie, con gestione delle pratiche nell'ambito delle competenze professionali consentite.",
     intro:
@@ -206,6 +212,7 @@ export const services: Service[] = [
     number: "05",
     title: "Consulenza legale integrata",
     icon: "paragraph",
+    tagline: "Assistenza civile, commerciale e penale con avvocati abilitati",
     short:
       "Accesso ad assistenza in materia civile, commerciale e penale attraverso collaborazioni con professionisti legali qualificati, che svolgono le prestazioni riservate agli avvocati.",
     intro:
@@ -246,6 +253,7 @@ export const services: Service[] = [
     number: "06",
     title: "Pratiche di finanziamento",
     icon: "growth",
+    tagline: "Credito, finanziamenti e leasing tramite soggetti autorizzati",
     short:
       "Analisi delle esigenze finanziarie e supporto nell'individuazione di soluzioni di credito, finanziamenti e leasing tramite soggetti autorizzati e partner qualificati.",
     intro:
@@ -287,6 +295,7 @@ export const services: Service[] = [
     number: "07",
     title: "Avvio d'impresa, contabilità e bilanci",
     icon: "key",
+    tagline: "Apertura di attività, SUAP, contabilità e successioni",
     short:
       "Assistenza per l'apertura di attività, adempimenti amministrativi e fiscali, pratiche SUAP, contabilità, bilanci, documentazione contrattuale e pratiche di successione.",
     intro:

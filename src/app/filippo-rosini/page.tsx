@@ -37,53 +37,58 @@ export default function FilippoRosiniPage() {
   return (
     <>
       {/* HERO */}
-      <section className="relative overflow-hidden">
-        <div aria-hidden="true" className="absolute inset-y-0 right-0 hidden w-[34%] bg-ivory-deep lg:block" />
-        <div className="container-site relative pb-20 pt-10 lg:pb-28 lg:pt-14">
+      <section className="relative overflow-hidden bg-ivory">
+        <div className="container-site relative pb-14 pt-10 lg:min-h-[46rem] lg:pb-28 lg:pt-14">
           <Breadcrumbs items={[{ name: "Filippo Rosini", path: "/filippo-rosini" }]} />
-          <div className="mt-12 grid items-center gap-14 lg:mt-16 lg:grid-cols-12 lg:gap-10">
-            <div className="lg:col-span-6">
-              <p className="eyebrow" data-reveal>
-                Il professionista
-              </p>
-              <h1 className="display mt-7" data-reveal>
-                Filippo Rosini.
-                <span className="mt-3 block text-[0.62em] italic leading-[1.1] text-navy/90">
-                  Un percorso professionale dedicato alla consulenza.
-                </span>
-              </h1>
-              <p className="lead mt-8 max-w-xl" data-reveal>
-                {studio.shortQualification}, dal {studio.since} accanto a imprese, professionisti e privati.
-                Un&apos;esperienza costruita nel tempo, attraverso l&apos;aggiornamento continuo e il confronto diretto
-                con chi fa impresa.
-              </p>
-              <div className="mt-10 flex flex-col gap-4 sm:flex-row" data-reveal>
-                <Link href="/contatti" className="btn btn-primary">
-                  Parla con lo Studio Rosini
-                  <ArrowRight className="btn-arrow" />
-                </Link>
-                <Link href="/servizi" className="btn btn-outline">
-                  I servizi dello studio
-                </Link>
-              </div>
+          <div className="mt-12 max-w-2xl lg:mt-24 lg:w-[54%] lg:max-w-none lg:pr-12">
+            <p className="eyebrow" data-reveal>
+              Il professionista
+            </p>
+            <h1 className="display mt-7" data-reveal>
+              Filippo Rosini.
+              <span className="mt-3 block text-[0.6em] italic leading-[1.1] text-navy/90">
+                Un percorso professionale dedicato alla consulenza.
+              </span>
+            </h1>
+            <p className="lead mt-8 max-w-xl" data-reveal>
+              {studio.shortQualification}, dal {studio.since} accanto a imprese, professionisti e privati.
+              Un&apos;esperienza costruita nel tempo, attraverso l&apos;aggiornamento continuo e il confronto diretto
+              con chi fa impresa.
+            </p>
+            <div className="mt-10 flex flex-col gap-4 sm:flex-row" data-reveal>
+              <Link href="/contatti" className="btn btn-primary">
+                Parla con lo Studio Rosini
+                <ArrowRight className="btn-arrow" />
+              </Link>
+              <Link href="/servizi" className="btn btn-outline">
+                I servizi dello studio
+              </Link>
             </div>
-            <div className="lg:col-span-5 lg:col-start-8">
-              <figure className="relative mx-auto max-w-[28rem] pl-5 pt-5 sm:pl-7 sm:pt-7" data-reveal>
-                <div aria-hidden="true" className="absolute bottom-20 left-0 right-12 top-0 border border-bronze" />
-                <div className="relative aspect-[3/4] overflow-hidden bg-ivory-deep">
-                  <Image
-                    src={photos.figuraInteraSorriso.src}
-                    alt={photos.figuraInteraSorriso.alt}
-                    fill
-                    priority
-                    placeholder="blur"
-                    sizes="(min-width: 1024px) 28rem, 90vw"
-                    className="object-cover object-[50%_25%]"
-                  />
+            <dl className="mt-14 grid max-w-xl grid-cols-3 border-t border-line-warm pt-7" data-reveal>
+              {[
+                { t: "1992", d: "Inizio dell'attività" },
+                { t: "2007", d: "Consulente del Lavoro" },
+                { t: "3 sedi", d: "In Toscana" },
+              ].map((f) => (
+                <div key={f.t}>
+                  <dt className="font-serif text-[1.75rem] leading-none text-navy">{f.t}</dt>
+                  <dd className="mt-2 text-[0.8125rem] leading-snug text-muted">{f.d}</dd>
                 </div>
-              </figure>
-            </div>
+              ))}
+            </dl>
           </div>
+        </div>
+        <div className="relative mx-5 mb-16 aspect-[4/5] overflow-hidden bg-ivory-deep sm:mx-8 lg:absolute lg:inset-y-0 lg:right-0 lg:m-0 lg:aspect-auto lg:w-[42%]">
+          <Image
+            src={photos.inPiedi.src}
+            alt={photos.inPiedi.alt}
+            fill
+            preload
+            quality={85}
+            placeholder="blur"
+            sizes="(min-width: 1024px) 42vw, 100vw"
+            className="object-cover object-[50%_20%]"
+          />
         </div>
       </section>
 
@@ -135,12 +140,13 @@ export default function FilippoRosiniPage() {
             <div className="lg:col-span-5" data-reveal>
               <div className="relative aspect-[4/5] overflow-hidden bg-ivory-deep">
                 <Image
-                  src={photos.scrivaniaVerticale.src}
-                  alt={photos.scrivaniaVerticale.alt}
+                  src={photos.ritratto.src}
+                  alt={photos.ritratto.alt}
                   fill
+                  quality={85}
                   placeholder="blur"
                   sizes="(min-width: 1024px) 34vw, 100vw"
-                  className="object-cover object-[50%_45%]"
+                  className="object-cover object-[50%_25%]"
                 />
               </div>
             </div>
@@ -221,12 +227,13 @@ export default function FilippoRosiniPage() {
           <div className="lg:col-span-5 lg:col-start-8" data-reveal>
             <div className="relative aspect-[4/3] overflow-hidden bg-navy-deep">
               <Image
-                src={photos.alComputer.src}
-                alt={photos.alComputer.alt}
+                src={photos.vetrata.src}
+                alt={photos.vetrata.alt}
                 fill
+                quality={85}
                 placeholder="blur"
-                sizes="(min-width: 1024px) 34vw, 100vw"
-                className="object-cover object-[55%_40%]"
+                sizes="(min-width: 1024px) 40vw, 100vw"
+                className="object-cover object-[22%_40%]"
               />
             </div>
           </div>

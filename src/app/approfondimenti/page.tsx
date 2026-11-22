@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowRight } from "@/components/Icons";
 import { PageHeader } from "@/components/PageHeader";
 import { articleCategories, getArticles } from "@/content/articles";
-import { photos } from "@/content/photos";
+import { offices } from "@/content/photos";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
@@ -77,12 +77,12 @@ export default async function ApprofondimentiPage() {
               </div>
               <div className="relative hidden aspect-[4/5] h-full lg:col-span-5 lg:block">
                 <Image
-                  src={photos.scrivaniaLaterale.src}
+                  src={offices.vista.src}
                   alt=""
                   fill
                   placeholder="blur"
                   sizes="40vw"
-                  className="object-cover object-[62%_40%]"
+                  className="object-cover object-[40%_50%]"
                 />
               </div>
             </div>

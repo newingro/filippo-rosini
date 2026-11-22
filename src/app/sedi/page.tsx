@@ -47,12 +47,13 @@ export default function SediPage() {
           <div className="lg:col-span-5" data-reveal>
             <div className="relative aspect-[4/5] overflow-hidden bg-ivory-deep">
               <Image
-                src={photos.figuraInteraFrontale.src}
-                alt={photos.figuraInteraFrontale.alt}
+                src={photos.inPiedi.src}
+                alt={photos.inPiedi.alt}
                 fill
+                quality={85}
                 placeholder="blur"
                 sizes="(min-width: 1024px) 34vw, 100vw"
-                className="object-cover object-[50%_30%]"
+                className="object-cover object-[50%_20%]"
               />
             </div>
           </div>

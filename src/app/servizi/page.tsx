@@ -33,12 +33,13 @@ export default function ServiziPage() {
       <section aria-label="Lo studio al lavoro" className="container-site -mt-px">
         <div className="relative mt-12 aspect-[16/9] overflow-hidden bg-ivory-deep sm:aspect-[21/9] lg:mt-16" data-reveal>
           <Image
-            src={photos.alComputer.src}
-            alt={photos.alComputer.alt}
+            src={photos.scrivania.src}
+            alt={photos.scrivania.alt}
             fill
+            quality={85}
             placeholder="blur"
             sizes="(min-width: 1280px) 1184px, 100vw"
-            className="object-cover object-[50%_38%]"
+            className="object-cover object-[50%_14%]"
           />
         </div>
       </section>

@@ -6,6 +6,7 @@ import { Header } from "@/components/Header";
 import { JsonLd } from "@/components/JsonLd";
 import { ReviewBar } from "@/components/ReviewBar";
 import { RevealObserver } from "@/components/RevealObserver";
+import { TopBar } from "@/components/TopBar";
 import { SITE_URL, studio } from "@/content/site";
 import { IS_LIVE } from "@/lib/review";
 import { OG_IMAGE, siteJsonLd } from "@/lib/seo";
@@ -62,6 +63,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           Vai al contenuto
         </a>
         <ReviewBar />
+        <TopBar />
         <Header />
         <main id="contenuto" tabIndex={-1} className="outline-none">
           {children}

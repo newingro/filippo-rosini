@@ -34,6 +34,24 @@ export default function ContattiPage() {
                   fallbackPhone={primaryPhone}
                 />
               </div>
+              <div className="mt-14">
+                <h2 className="font-sans text-[0.75rem] font-semibold uppercase tracking-[0.2em] text-bronze-ink">
+                  Cosa succede dopo l&apos;invio
+                </h2>
+                <ol className="mt-6 grid gap-px overflow-hidden border border-line-warm bg-line-warm sm:grid-cols-3">
+                  {[
+                    { n: "01", t: "Ricezione", d: "La richiesta arriva direttamente allo studio." },
+                    { n: "02", t: "Primo contatto", d: "Lo studio ti ricontatta ai recapiti che hai indicato." },
+                    { n: "03", t: "Appuntamento", d: "Si concorda un incontro nella sede che preferisci." },
+                  ].map((step) => (
+                    <li key={step.n} className="bg-white p-6">
+                      <span className="font-serif text-[1.5rem] leading-none text-bronze-ink">{step.n}</span>
+                      <p className="mt-3 font-serif text-[1.375rem] leading-tight text-navy">{step.t}</p>
+                      <p className="mt-1.5 text-[0.9375rem] leading-snug text-muted">{step.d}</p>
+                    </li>
+                  ))}
+                </ol>
+              </div>
             </div>
 
             <aside className="lg:col-span-4 lg:col-start-9" aria-label="Recapiti dello studio">

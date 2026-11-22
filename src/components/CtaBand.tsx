@@ -2,16 +2,20 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, MailIcon, PhoneIcon } from "@/components/Icons";
 import { primaryPhone, studio, telHref } from "@/content/site";
-import { photos } from "@/content/photos";
+import { photos, type Photo } from "@/content/photos";
 
 export function CtaBand({
   title = "Parliamo delle tue esigenze.",
   text = "Contatta Studio Rosini per richiedere informazioni o fissare un primo appuntamento presso una delle sedi di Pistoia, Prato e Osmannoro.",
   cta = "Richiedi una consulenza",
+  image = photos.scrivania,
+  imagePosition = "50% 40%",
 }: {
   title?: string;
   text?: string;
   cta?: string;
+  image?: Photo;
+  imagePosition?: string;
 }) {
   return (
     <section aria-labelledby="cta-title" className="overflow-hidden bg-ivory-deep">
@@ -40,13 +44,15 @@ export function CtaBand({
             <span className="link-underline">{studio.email}</span>
           </a>
         </div>
-        <div className="relative -mx-5 min-h-[22rem] sm:-mx-8 lg:col-span-6 lg:ml-0 lg:mr-[min(-3rem,calc((80rem_-_100vw)/2_-_3rem))] lg:min-h-full">
+        <div className="relative -mx-5 min-h-[24rem] sm:min-h-[28rem] sm:-mx-8 lg:col-span-6 lg:ml-0 lg:mr-[min(-3rem,calc((80rem_-_100vw)/2_-_3rem))] lg:min-h-full">
           <Image
-            src={photos.scrivaniaLaterale.src}
-            alt={photos.scrivaniaLaterale.alt}
+            src={image.src}
+            alt={image.alt}
             fill
             sizes="(min-width: 1024px) 50vw, 100vw"
-            className="object-cover object-[60%_40%]"
+            quality={85}
+            className="object-cover"
+            style={{ objectPosition: imagePosition }}
             placeholder="blur"
           />
         </div>

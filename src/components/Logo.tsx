@@ -5,7 +5,7 @@ export function Monogram({ tone = "dark", className = "" }: { tone?: "dark" | "l
   return (
     <span
       aria-hidden="true"
-      className={`relative grid size-11 shrink-0 place-items-center border ${color} font-serif text-[1.3rem] font-medium leading-none tracking-[-0.04em] ${className}`}
+      className={`relative grid size-11 shrink-0 place-items-center border lg:size-12 ${color} font-serif text-[1.3rem] font-medium leading-none tracking-[-0.04em] ${className}`}
     >
       <span className="translate-y-[1px]">
         F<span className="italic">R</span>
